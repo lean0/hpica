@@ -1,0 +1,231 @@
+<div id="intro">
+	<div id="navbar">
+		<div style="margin: auto 0;">
+			Hélène PICAVEZ
+		</div>
+		<div id="nav">
+			<a class="nav_link">
+				Mon Parcours
+			</a>
+			<a class="nav_link">
+				Pourquoi me consulter ?
+			</a>
+			<a class="nav_link">
+				Mon domaine d'activité
+			</a>
+			<a class="nav_link">
+				Comment choisir son psy ?
+			</a>
+			<a class="nav_link">
+				Mes tarifs
+			</a>
+			<a class="nav_link" href="/actus" >
+				Mes actus
+			</a>		
+		</div>
+	</div>
+
+	<div id="nom">
+		<span id="moi">		
+		Hélène PICAVEZ
+	</span>
+		<br><br> Psychologue - Psychothérapeute
+		<br><br><br><br>
+		<span id="rdv">
+			Prendre rendez vouz
+		</span>
+	</div>
+</div>
+
+
+
+
+<div id="info"  class="modal">
+	<div class="modal-content">
+		<span id="close">&times;</span>
+	Contactez moi par téléphone ou par mail
+	<div style="padding: 15px 0px; border-bottom: 1px solid black; border-top: 1px solid black; margin: 25px auto;">
+		07 64 13 72 58
+		<br><br>
+		helenepicavez@gmail.com
+	</div>
+	<span id="cloze">
+		Fermer
+	</span>
+</div>
+
+</div>
+
+
+
+<div id="short">
+	<div class="short_title">	
+		<div>
+			<img class="s_icon" src="images/confusion.png" >
+		</div>
+		<div>
+			Thérapie cognitive et comportementale
+		</div>
+	</div>
+	<div class="short_title">
+		<div>
+			<img class="s_icon" src="images/location.png" >
+		</div>
+		<div>
+			Phalempin		
+			<br>
+			0764137258
+		</div>
+	</div>
+	<div class="short_title">	
+		<div>
+			<img class="s_icon" src="images/icon.png" >
+ 		</div>
+		<div>
+			Pourquoi passer par mes services ?
+		</div>
+	</div>
+</div>
+
+<div id="presentation">
+	<h3>
+		Présentation
+	</h3>
+
+	<div id="me">	
+		<div id="resume">
+			Je suis Hélène Picavez, psychologue et je vous acceuille dans mon cabinet à Phalempin dans le Nord.
+			<br><br>
+			Master 2 psychologie thérapies émotionnelles cognitives et comportementales EMDR, Formation thérapie familiale en cours
+			<br><br>
+			Thérapies cognitives et comportementales (restructuration cognitive, estime de soi..), EMDR (désensibilisation par les mouvements oculaires), psychologie positive, ACT, pleine conscience
+			<br><br>
+			Pratisue intégrative avec une formation solide de TECC, forte d'une expérience pluridisciplinaires. Ecoute bienveillante tournée vers la recherche de solutions.
+			<br><br>
+			Cabinet douillet, confortable pour que le patient se sente le plus à l'aise possible. Le lieu est propice est à une travail d'équipe optimal.
+			<br><br>
+			N'hésitez pas à me contacter!
+		</div>
+		<div id="pic">
+			<img src="https://www.pexels.com/search/flower/">
+		</div>
+	</div>	
+</div>
+
+<div id="whyme">
+	<h3>
+		Pourquoi passer par mes services ?
+	</h3>
+
+	<div id="xperience">
+		<div class="x_type">
+			<div>
+				<img class="s_icon" src="images/skills.png">
+			</div>
+			<div>
+				12 ans d'expérience
+			</div>
+		</div>
+
+		<div class="x_type">
+			<div>
+				<img class="s_icon" src="images/psychologist.png">
+			</div>
+			<div>
+				Passionnée et à l'écoute
+			</div>
+		</div>
+
+		<div class="x_type">
+			<div>
+				<img class="s_icon" src="images/graduate-diploma.png" >
+			</div>
+			<div>
+				Diplomée de plusieurs formations
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<div id="domaine">
+	<h3>
+		Domaines
+	</h3>
+
+	<div id="d_box">
+		<div class="xpertize" ">
+			TECC
+			<br>
+			<a href="" class="more"> 
+				Plus d'infos 
+			</a>
+		</div>
+
+		<div class="xpertize" ">
+			EMDR
+			<br>
+			<a href="" class="more"> 
+				Plus d'infos 
+			</a>
+		</div>
+		
+	</div>
+</div>
+
+<div id="footer">
+	<div id="link_box">
+		<a href="" class="f_link">
+			Parcours
+		</a>
+
+		<a href="" class="f_link">
+			Pourquoi passer par mes services
+		</a>
+
+		<a href="" class="f_link">
+			mentions legales
+		</a>
+
+		<a href="http://fairesonsiteweb.fr/" class="f_link">
+			Création du site par MonSuperCodeur
+		</a>
+		
+	</div>
+	
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('info');
+
+// Get the button that opens the modal
+var btn = document.getElementById("rdv");
+
+// Get the <span> element that clozes the modal
+var span = document.getElementById("cloze");
+
+var x = document.getElementById("close");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), cloze the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+x.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, cloze it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>

@@ -1,0 +1,12 @@
+<!-- <h1>Actus#show</h1>
+<p>Find me in app/views/actus/show.html.erb</p> -->
+the actu that has just been selected is titled "<b><%= @actu.title %></b>"
+<br> written by "<b> <%= @actu.content %> </b>"
+<br>
+<div style="color: gray; font-style: italic; margin-top: 15px; padding: 10px 10px; border: 1px solid black; border-radius: 2px; display: inline-block;margin-left: 15px;">
+	<%= link_to "Update ?", edit_actu_path%>
+
+
+<div style="color: gray; font-style: italic;padding: 10px 10px; border: 1px solid black; border-radius: 2px; display: inline-block;margin-left: 5px;">
+	<%= link_to "Back home", actus_path%>
+</div></div>

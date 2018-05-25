@@ -1,0 +1,220 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body
+{
+	margin:0;	
+}
+
+a
+{
+	text-decoration:none;
+	color : black;
+}
+
+
+h3
+{
+	text-align:center;	
+}
+
+
+#cloze 
+{
+	padding: 7.5px;
+	border: 1px solid black;
+	border-radius: 1px;
+}
+
+#intro
+{
+	height: 100vh;background: url('images/cabinet.jpg') 100% 100%; color: white; overflow: hidden;
+}
+
+#navbar
+{
+	background: white; color: black; display: flex; justify-content:space-between; flex-direction:row;padding-left:2.5%;padding-right:2.5%; margin: auto;
+}
+#nav
+{
+	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;font-size:12px;
+}
+
+.nav_link
+{
+    cursor:pointer;padding: 18px 7px;text-align:center;border-radius : 7.5px;
+}
+
+.nav_link:hover
+{
+	color: white; background: #7DBAF0;	
+}
+
+#nom
+{
+	padding: 25vh 20%; text-align: center;
+	font-size: 28px;
+}
+
+#moi
+{
+ font-size: 30px;
+}
+
+#rdv
+{
+	background: #7DBAF0; color: white; padding: 10px 7.5px; border-radius: 3px;cursor: pointer;
+}
+
+
+#short
+{
+	padding-top: 15px; padding-bottom: 15px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-around; background: #7DBAF0; color: white;
+	padding-left: 2.75%; padding-right: 2.75%;
+}
+
+.short_title
+{
+	 margin-left: 8px; margin-right: 8px; padding: 7.5px 5px; text-align:center;
+}
+
+#presentation
+{
+	padding-bottom: 15px; padding-top: 15px;
+}
+
+#me
+{
+	width: 90%; margin: auto; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-around;
+}
+
+#resume
+{
+	padding: 7.5px 5px; width:540px; margin-bottom: 10px;
+}
+
+#pic 
+{
+	margin: auto;	
+}
+
+img
+{
+	width: 150px; height: 150px;
+}
+
+.s_icon
+{
+	width:60px; height:60px; margin-bottom:15px;
+}
+
+#whyme
+{
+	padding-top: 15px; padding-bottom: 35px; background: #7DBAF0; color: white; text-align: center;
+}
+
+#xperience 
+{
+	width: 90%; margin: auto; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-around;
+}
+
+#x_type
+{
+	width: 30%; text-align: center;margin-left: 8px; margin-right: 8px; padding: 7.5px 5px; display: flex;
+	flex-direction: column;
+}
+
+#domaine 
+{
+	padding-top: 15px; padding-bottom: 15px;width: 100%; margin: auto;
+}
+
+#d_box
+{
+	width: 95%; margin: auto; display: flex; flex-wrap: wrap;justify-content: space-around;
+}
+
+.xpertize
+{
+	padding: 15px 15px; margin: 10px 10px; font-size: 30px;
+}
+
+.more
+{
+	text-decoration: none; font-size: 14px; color: black;
+}
+
+#footer
+{
+	padding-top: 15px; padding-bottom: 15px; text-align: center;background: #E6E6E6;
+	font-size: 12.5px;
+}
+
+#link_box
+{
+	width: 95%;margin: auto; display: flex; justify-content: space-around; flex-wrap: wrap;
+}
+
+.f_link
+{
+	padding-top: 7.5px 5px; margin: 17.5px; cursor: pointer;text-decoration: none; color: #A4A4A4;
+}
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align:center;
+}
+
+/* The Close Button */
+#close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 666px)
+{
+	
+}
+
+
+
+
+

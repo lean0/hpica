@@ -1,0 +1,22 @@
+<!-- 
+<h1>Actus#index</h1>
+<p>Find me in app/views/actus/index.html.erb</p>
+ -->
+  <div id="actu" style="width: 85%; margin: auto; text-align: center; ">
+  <h2> Les Actus</h2>
+  <div style="color: gray; font-style: italic; margin-top: 15px; padding: 10px 10px; border: 1px solid black; border-radius: 2px; display: inline-block;margin-left: 15px;">  
+    <%= link_to "Add a new actu", new_actu_path%>
+  </div>
+
+ <% @actus.each do |actu| %>
+    <p> <%= actu.id%>. <b><%= actu.title.capitalize%></b> <%= actu.content%></p> 
+    
+    <div style="color: gray; font-style: italic; margin-top: 15px; padding: 10px 10px; border: 1px solid black; border-radius: 2px; display: inline-block;margin-left: 15px;">  
+      <%= link_to "Learn more", actu_path(actu)%>
+    </div>
+
+    <div style="color: gray; font-style: italic; margin-top: 15px; padding: 10px 10px; border: 1px solid black; border-radius: 2px; display: inline-block;margin-left: 15px;">  
+      <%= link_to "Delete", actu_path(actu), method: :delete, data: { confirm:"are you sure ?" }%>
+    </div>
+  <% end%>
+</div>
