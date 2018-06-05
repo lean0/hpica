@@ -1,11 +1,21 @@
-<div class="container">
-   <div class="row">
-     <div class="col-xs-12 col-sm-6 col-md-4">
-        <%= render 'form' %>
+<div style="background: lightgreen;">
+  <div style="font-size: 18px; font-weight: bold; padding-top:  75px;padding-bottom: 15px;  text-align: center; width: 80%; margin: auto;"> 
+      <%= link_to "Hélène Actus", actus_path%>  <%= link_to new_actu_path do%>
+        <span style="float: right;"> <i class="fas fa-plus"></i></span>
+        <%end%>
+      
+    </div >
 
-     </div>
-   </div>
- </div>
+	 <div class="box" id="edit">
+      <div class="formBox">
+        <div class="container" style="margin: 20px;">
+          <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-4">
+              <%= render 'easeform' %>
+           </div>   
+         </div>
+        </div>
+      </div>
 
 <!-- 
  <form method="delete" action="/actus">
@@ -13,6 +23,13 @@
   <input type="submit">
 </form> -->
 
-<div style="color: gray; font-style: italic; margin-top: 15px; padding: 10px 10px; border: 1px solid black; border-radius: 2px; display: inline-block;margin-left: 15px;">
-	<%= link_to "Back home", actus_path%>
+     <%= render "pages/map"%>
 </div>
+</div>
+
+
+
+
+
+
+

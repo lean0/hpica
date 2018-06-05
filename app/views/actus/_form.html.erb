@@ -1,9 +1,48 @@
+<!--  """""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""
+			FORM DOC
+
+http://guides.rubyonrails.org/form_helpers.html
+""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""" -->
+
 <%= form_for @actu  do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
 
-  <%= f.label :content %>
-  <%= f.text_field :content %>
 
-  <%= f.submit %>
+<%= render 'errors'%>
+<div>  
+<%= f.label :title %>
+	<br>
+<%= f.text_field :title %>
+</div>
+
+
+<div>  
+<%= f.label :pwd %>
+	<br>
+<%= f.password_field :pwd %>
+</div>
+
+
+<!-- Picture field
+<div>  
+ f.label picture %>
+	<br>
+ f.file_field picture %>
+</div> 
+-->
+
+
+<div><%= f.label :content %>
+<br>
+  <%= f.text_area :content , :cols => 40, :rows => 5 %>
+ <!--  <textarea cols="40" rows="40" name="content" id="content">
+  </textarea> -->
+</div>  <br>  <br>
+
+  <%= f.submit "Créer"%>
+  <br><br>
+ <div class="classicB">
+  <%= link_to "< Back", actus_path%>
+</div>
 <% end %>

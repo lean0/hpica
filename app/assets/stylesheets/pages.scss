@@ -2,15 +2,123 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+
+.navbar {
+  overflow: hidden;
+  background: #404040;
+position:sticky; 
+	top:0;
+}
+.link {
+  	float: left;
+  	display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    text-decoration: none;
+
+}
+
+.icon {
+  	display: none;
+  	float: right;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 body
 {
-	margin:0;	
+	margin:0;	font-size:14px; font-family:"Open Sans", "Helvetica", "sans-serif";
 }
 
 a
 {
 	text-decoration:none;
 	color : black;
+}
+.box {
+	padding-top: 50px;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction :row;
+	justify-content: space-between;
+}
+
+.miniBox
+{
+	width: 540px;
+	margin: 0 auto;
+	margin-bottom : 50px;
+	opacity: 0.9;
+	background-color: white;
+	padding: 35px 30px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+iframe{
+	border-radius: 2px;
+	width: 250px;
+	height: 250px;
+}
+.mapbox
+{
+	border-radius : 5px;
+	background: #7DBAF0;
+	margin :0 auto;
+	color: white;
+	height: 400px;
+	position:sticky; 
+	top:105.2px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 2px;
+	padding: 0px 5px;
+	overflow:hidden;
+	line-height: 1;
+}
+#details
+{
+	margin:auto;	
+}
+
+#mapresentation{
+background: asset-url('helene.jpg');
+	background-size: cover;  background-attachment: fixed;
+}
+#about
+{
+background: asset-url('cabinet.jpg');
+	background-size: cover;background-attachment: fixed;
+}
+#commentchoisir
+{
+	background: asset-url('bureauhelene.jpg');
+	background-size: cover;background-attachment: fixed;
+} 
+#parcours{
+	background: asset-url('cabinet.jpg');
+	background-size: cover;background-attachment: fixed;
+} 
+#tarif
+{
+	background: asset-url('facade.jpg');
+	background-size: cover;background-attachment: fixed;
 }
 
 
@@ -27,28 +135,14 @@ h3
 	border-radius: 1px;
 }
 
+ul{
+	list-style-type: none;
+}
+
 #intro
 {
-	height: 100vh;background: url('images/cabinet.jpg') 100% 100%; color: white; overflow: hidden;
-}
-
-#navbar
-{
-	background: white; color: black; display: flex; justify-content:space-between; flex-direction:row;padding-left:2.5%;padding-right:2.5%; margin: auto;
-}
-#nav
-{
-	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;font-size:12px;
-}
-
-.nav_link
-{
-    cursor:pointer;padding: 18px 7px;text-align:center;border-radius : 7.5px;
-}
-
-.nav_link:hover
-{
-	color: white; background: #7DBAF0;	
+	height: 100vh;background: url('images/cabinet.jpg') 100% 100%; color: white; overflow: hidden; z-index:0; 
+background-attachment : fixed;
 }
 
 #nom
@@ -62,16 +156,27 @@ h3
  font-size: 30px;
 }
 
+
+.s_title
+{
+	font-size : 22px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+}
+
+
+
+
 #rdv
 {
-	background: #7DBAF0; color: white; padding: 10px 7.5px; border-radius: 3px;cursor: pointer;
+	background: #7DBAF0; color: white; padding: 10px 7.5px; border-radius: 3px;cursor: pointer; font-size: 3vh;
 }
 
 
 #short
 {
-	padding-top: 15px; padding-bottom: 15px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-around; background: #7DBAF0; color: white;
-	padding-left: 2.75%; padding-right: 2.75%;
+	padding: 25px 2.75%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-around; background: #7DBAF0; color: white;
 }
 
 .short_title
@@ -96,17 +201,16 @@ h3
 
 #pic 
 {
-	margin: auto;	
+	margin: auto;
+}
+img{
+	border-radius:4px;
 }
 
-img
-{
-	width: 150px; height: 150px;
-}
 
 .s_icon
 {
-	width:60px; height:60px; margin-bottom:15px;
+margin-bottom:15px;
 }
 
 #whyme
@@ -147,7 +251,7 @@ img
 
 #footer
 {
-	padding-top: 15px; padding-bottom: 15px; text-align: center;background: #E6E6E6;
+	padding-top: 25px; padding-bottom: 15px; text-align: center;background: #E6E6E6;
 	font-size: 12.5px;
 }
 
@@ -208,13 +312,90 @@ img
     cursor: pointer;
 }
 
-
-@media all and (max-width: 666px)
+#title
 {
-	
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 22.5px;
 }
 
 
+
+
+@media all and (max-width: 960px) {
+  .link {
+    display: none;
+  }
+  .icon {
+    float: right;
+    display: block;
+  }
+}
+@media all and (max-width: 960px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive .link {
+    float: none;
+    display: block;
+    text-align: left;
+    padding-left: 7px;
+    margin-right: 38px;
+
+  }
+  .navbar.responsive .link:hover
+  {
+  	border-bottom : 1px solid #fff;
+  }
+ 
+}
+@media all and (max-width: 862px)
+{
+	.mapbox
+	{
+		height:320px;
+		margin: auto;
+	}
+	iframe
+	{
+		width: 80vw;
+		height: 200px;margin: auto;
+	}
+}
+@media all and (max-width: 340px)
+{
+	#rdv
+	{
+		font-size: 2.4vh;
+	}
+	.miniBox{
+		font-size: 12px;
+		padding : 20px 15px;
+		margin: 3px;
+	}
+	#title{
+		font-size : 25px;	
+	}
+	.s_title
+	{
+		font-size: 20px;
+	}
+	.mapbox
+	{
+		font-size: 12px;
+		margin: auto;
+	}
+	#nom
+	{
+	padding : 20vh 20%;
+	font-size: 22px; 
+	}
+}
 
 
 

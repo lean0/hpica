@@ -1,0 +1,69 @@
+<div style="position: fixed; width: 100%; z-index: 99;"><div style="display: flex; flex-direction: row; justify-content: space-between; background:  #404040; opacity: 0.89; " id="mainnav">
+  
+  <a style=" color: white;cursor: pointer; margin:auto 0; padding: 10px 0px; margin-left: 2.5%; font-size: 20px;" href="/">Hélène PICAVEZ</a>
+  
+  <div class="navbar" id= "nav">
+    <a href="/mapresentation.html" class="link">Parcours</a>
+    <a href="/parcours.html" class="link">Pourquoi me consulter ?</a>
+	<a href="/about.html" class="link">Mon domaine d'activité</a>
+	<a href="/commentchoisir.html" class="link">Comment choisir son psy ?</a>
+    <a href="/tarif.html" class="link">Tarifs</a>
+    <a href="/actus" class="link">Actus </a> 
+   <!--  <a href="/commentchoisir" class="link">Contact</a> -->
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+    	<i class="fa fa-bars"></i>
+    </a>
+    <a style="font-size: 25px; right:1px; color:white;" href="https://www.facebook.com/helenepicavezpsy/" target= "_blank" class="link">
+			<i class="fab fa-facebook"></i>
+	</a>
+  </div>
+</div></div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function displayMenu() {
+  var x = document.getElementById("nav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+  </script>
+<script>  // grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init(); 
+
+  </script><!-- 	<div id="navbar" class="navigation-bar is-visible" data-nav-status="toggle">
+		<a style="margin: auto 0; font-size: 18px;" href="/">
+			Hélène PICAVEZ
+		</a>
+		<div id="nav" style="right: 0;">
+			<a class="nav_link" href="/mapresentation">
+				Mon Parcours
+			</a>
+			<a class="nav_link" href="/parcours">
+				Pourquoi me consulter ?
+			</a>
+			<a class="nav_link" href="/about">
+				Mon domaine d'activité
+			</a>
+			<a class="nav_link" href="/commentchoisir">
+				Comment choisir son psy ?
+			</a>
+			<a class="nav_link" href="/tarif">
+				Mes tarifs
+			</a>
+			<a class="nav_link" href="/actus" >
+				Mes actus 
+			</a>		
+		</div>
+		<a style="margin: auto 0; font-size: 25px; right: 1px; " href="https://www.facebook.com/helenepicavezpsy/" >
+				<i class="fab fa-facebook"></i>
+		</a>
+	</div> -->
