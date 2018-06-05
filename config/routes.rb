@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 resources :actus
+
 get 'home', to: "pages#home", as: :home
 
 get 'about.html', to: "pages#about", as: :about
