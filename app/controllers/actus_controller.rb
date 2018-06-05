@@ -85,7 +85,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   end
 
   def pass
-    @mp = "NEN9PxeYR4uWzvA6B5mC"
+    mp = "NEN9PxeYR4uWzvA6B5mC"
   end
 
 end

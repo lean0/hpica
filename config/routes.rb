@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-
-resources :actus
+	resources :actus
 
 get 'home', to: "pages#home", as: :home
 
