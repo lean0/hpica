@@ -32,12 +32,16 @@ body
   	float: left;
   	display: block;
     color: #fff;
+    border-radius:3px;
     text-align: center;
     font-size: 14px;
     padding: 5px 5px;
-    margin: auto 5px;
-    text-decoration: none; transition: background 2s;
+    margin: 10px 5px;
+    text-decoration: none; transition: background 0.5s;
 }
+
+
+.link:hover{ text-decoration-color: #7DBAF0; background: red; transition: background 0.5s; color: black;}
 
 a:hover{
 	text-decoration:none;
@@ -56,8 +60,6 @@ a{
 }
 
 
-
-.link:hover{ text-decoration-color: red; background: red; transition: background 2s;}
 
 
 
@@ -418,6 +420,10 @@ margin-bottom:15px;
 	{
 		height:320px;
 		margin: auto;
+	}
+	.formBox{
+	width: 80vw;
+
 	}
 	iframe
 	{
