@@ -16,12 +16,16 @@ a
 }
 
 
-
+#mainnav
+{
+	display: flex; flex-direction: row; justify-content: space-between; background:  #404040; opacity: 0.89; position:sticky; 
+	top:0;
+	
+}
 .navbar {
   overflow: hidden;
   background: #404040;
-position:sticky; 
-	top:0;
+
 }
 .link {
   	float: left;
