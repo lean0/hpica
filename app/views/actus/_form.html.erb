@@ -10,39 +10,45 @@ http://guides.rubyonrails.org/form_helpers.html
 
 
 <%= render 'errors'%>
-<div>  
+<div class="row">
+<div class="col-75">  
 <%= f.label :title %>
 	<br>
 <%= f.text_field :title %>
-</div>
+</div></div>
 
 
-<div>  
+<div class="row">
+<div class="col-75">  
 <%= f.label :pwd %>
 	<br>
 <%= f.password_field :pwd %>
-</div>
+</div> </div>
 
 
 <!-- Picture field
-<div>  
+<div class="row">
+<div class="col-75">  
  f.label picture %>
 	<br>
  f.file_field picture %>
-</div> 
+</div> </ 
 -->
 
 
-<div><%= f.label :content %>
+<div class="row">
+	<div class="col-75"><%= f.label :content %>
 <br>
   <%= f.text_area :content , :cols => 40, :rows => 5 %>
  <!--  <textarea cols="40" rows="40" name="content" id="content">
   </textarea> -->
-</div>  <br>  <br>
-
+</div> </div> <br>  <br>
+<div class="row">
   <%= f.submit "Créer"%>
+</div>
   <br><br>
  <div class="classicB"  style="text-decoration: none;">
   <%= link_to "< Back", actus_path,class: 'dark'%>
 </div>
 <% end %>
+
