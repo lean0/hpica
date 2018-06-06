@@ -17,31 +17,29 @@
     <%end%>
       
   </div >
+</div>
     
-  <div class="box" id="actu">
-    <div class="formBox" style="background: none;">
+<div class="box" id="actu">
+  <div class="formBox" style="background: none;">      
+    <% @actus.each do |actu| %>
         
-      <% @actus.each do |actu| %>
-        
-        <div style=" width: 100%; margin:auto;height: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;display: flex; flex-direction: column;justify-content: space-around; margin: 7.5px 0px; background-color: white; opacity: 0.9;border-radius: 5px;">
+    <div style=" width: 100%; margin:auto;height: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;display: flex; flex-direction: column;justify-content: space-around; margin: 7.5px 0px; background-color: white; opacity: 0.9;border-radius: 5px;">
             
-          <div style="height: 200px; overflow:hidden;padding: 4px;">
+        <div style="height: 200px; overflow:hidden;padding: 4px;">
   <!--      <%= actu.id%>. 
-  -->         <b>
-                <%= actu.title.capitalize%>    
-              </b> <br><br>
-              <%= actu.content%>
-          </div>
+  -->     <b>
+            <%= actu.title.capitalize%>    
+          </b> <br><br>
+            <%= actu.content%>
+        </div>
         
-          <div class="way"> 
-            <div class="classicB"> 
-              <%= link_to "Détails", actu_path(actu)%>
-            </div>
-
+        <div class="way"> 
+          <div class="classicB"> 
+            <%= link_to "Détails", actu_path(actu)%>
           </div>
         </div>
-      <% end%>
-    </div>  
-    <%= render "pages/map"%>
-  </div>
-
+      </div>
+    <% end%>
+  </div>  
+  <%= render "pages/map"%> 
+</div>
