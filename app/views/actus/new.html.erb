@@ -1,5 +1,5 @@
 <div style="background: lightblue;"> 
- 	<div style="font-size: 18px; font-weight: bold; padding-top:  75px;padding-bottom: 15px;  text-align: center; width: 80%; margin: auto;"> 
+ 	<div style="font-size: 18px; font-weight: bold; padding-top:  75px;padding-bottom: 15px;  text-align: center; width: 80%; margin: auto;color: black; text-decoration: none;"> 
       <%= link_to "Hélène Actus", actus_path,class: 'dark'%>  <%= link_to new_actu_path do%>
         <span style="float: right;"> <i class="fas fa-plus"></i></span>
         <%end%>
@@ -9,6 +9,9 @@
   		<div class="formBox" style="width: 90vw; margin: auto;">
        		<%= render 'form' %>
         </div>
+        
+   <%= render "pages/map"%>
+
       </div>
     </div>
 

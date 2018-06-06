@@ -1,15 +1,16 @@
 <%= form_for @actu  do |f| %>
-<div>  <%= f.label :pwd %>
+<div class="row">
+<div class="col-75">  
+ <%= f.label :pwd %>
 	<br>
 <%= f.password_field :pwd %>
-</div>  <br>  <br>
-
+</div> </div>
+<div class="row">
   <%= f.submit "Confirmer" %>
-
-	<br><br>
+</div><br>
 <div class="way">
 	<div class="classicB"  style="text-decoration: none;">
-	  <%= link_to "Retour", actu_path,class: 'dark'%>
+	  <%= link_to "Retour", actu_path, class: 'dark'%>
 	</div>
 </div>
 <% end %>
