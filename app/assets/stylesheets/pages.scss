@@ -102,6 +102,12 @@ iframe{
 	margin:auto;	
 }
 
+#intro
+{
+	height: 100vh;background: url('images/cabinet.jpg');background-size: cover; color: white; overflow: hidden; background-attachment : fixed;
+}
+
+
 #mapresentation{
 background: asset-url('helene.jpg');
 	background-size: cover;  background-attachment: fixed;
@@ -142,12 +148,6 @@ h3
 
 ul{
 	list-style-type: none;
-}
-
-#intro
-{
-	height: 100vh;background: url('images/cabinet.jpg') 100% 100%; color: white; overflow: hidden; z-index:0; 
-background-attachment : fixed;
 }
 
 #nom
