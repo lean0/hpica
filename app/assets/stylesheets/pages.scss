@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body
+{
+	margin:0;	font-size:14px; font-family:"Open Sans", "Helvetica", "sans-serif";
+	line-height: 1.6;
+  text-decoration: none;
+}
+
+a
+{
+	text-decoration:none;
+	color : black;
+}
 
 
 
@@ -9,7 +21,8 @@
   overflow: hidden;
   background: #404040;
 position:sticky; 
-	margin: auto 0;
+	top:0;
+	margin-bottom:0px;
 }
 .link {
   	float: left;
@@ -21,6 +34,7 @@ position:sticky;
     margin: 5px 5px;
     text-decoration: none;
     line-height: 2.9;
+
 }
 
 .icon {
@@ -39,16 +53,6 @@ position:sticky;
 
 
 
-body
-{
-	margin:0;	font-size:14px; font-family:"Open Sans", "Helvetica", "sans-serif";
-}
-
-a
-{
-	text-decoration:none;
-	color : black;
-}
 .box {
 	padding-top: 50px;
 	display:flex;
