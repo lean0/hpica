@@ -15,6 +15,10 @@ width: 100%;
   width: 100%; margin:auto;height: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;display: flex; flex-direction: column;justify-content: space-around; margin: 7.5px 0px; background-color: white; opacity: 0.9;border-radius: 5px;
 }
 
+a{
+  color: black;
+  text-decoration:  none;
+}
 #edit
 {	
 	background: asset-url('edit.jpeg');
@@ -55,9 +59,18 @@ width: 100%;
 }
 .container
 {
-  width: 50%; 
+  width: 96%; 
 }
 
+input{
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 2.5px;
+}
+textarea{
+  margin: 0 auto;
+  border-radius: 2.5px;
+}
 .classicB
 {
   padding: 7.5px 7.5px; 
