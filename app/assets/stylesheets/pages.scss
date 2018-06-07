@@ -84,9 +84,10 @@ a{
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #888;
     width: 80%;
+    font-size:3vw;
 }
 
 
@@ -350,10 +351,11 @@ margin-bottom:15px;
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: auto;
+    margin: 20vh 10vw;
     padding: 50px;
     border: 1px solid #888;
-    width: 50%;
+    width: 80vw;
+    height: 60hv;
     text-align:center;
 }
 
@@ -422,13 +424,15 @@ margin-bottom:15px;
 		margin: auto;
 	}
 	.formBox{
-	width: 80vw;
+	width: 90vw;
+	margin: auto;
 
 	}
 	iframe
 	{
-		width: 80vw;
-		height: 200px;margin: auto;
+		width: 90vw;
+		height: 200px;
+		margin: auto;
 	}
 }
 @media all and (max-width: 340px)
