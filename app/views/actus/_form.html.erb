@@ -28,22 +28,11 @@ http://guides.rubyonrails.org/form_helpers.html
 </div> </div>
 
 
-<!-- Picture field
+Picture field
 <div class="row">
 <div class="col-75">  
- f.label picture %>
-	<br>
- f.file_field picture %>
-</div> </ 
--->
-
-<div class="row">
-<div class="col-75">  
- <%= f.label :picture %>
-	<br>
- <%= f.file_field :picture %>
-</div>
-</div>
+ <%= image_tag f.image.url(:medium)%>
+</div></div>
 
 <div class="row">
 	<div class="col-75"><%= f.label :content %>
