@@ -66,7 +66,7 @@ a{
 
 
 .box {
-	padding-top: 120px;
+	padding-top: 12.5vh;
 	padding-bottom: 40px;
 	display:flex;
 	flex-wrap:wrap;
@@ -76,7 +76,7 @@ a{
 
 .miniBox
 {
-	width: 60vw;
+	width: 600px;
 	margin: 0 auto;
 	margin-bottom: 7.5vh; 
 	opacity: 0.9;
@@ -388,9 +388,10 @@ margin-bottom:15px;
 	}
 	.indexBox{
 	width:95vw;
+	text-align:center;
 	}
-	.diplayBox{
-	width:95vw;
+	.displayBox{
+	width:95vw;margin-bottom: 15px;
 	}
 	iframe
 	{
@@ -398,13 +399,20 @@ margin-bottom:15px;
 		height: 200px;
 		margin: auto;
 	}
+
+.modal-content {
+    margin:20vh auto;
+    width: 90vw;
+    height: 60vh;
+
+}
 }
 @media all and (max-width: 340px)
 {
 .modal-content {
-    margin:20vh 10vw;
-    width: 80vw;
-    height: 60vh;
+    margin:10vh 2.5vw;
+    width: 95vw;
+    height: 80vh;
 
 }
 	.formBox{
@@ -419,6 +427,7 @@ margin-bottom:15px;
 		font-size: 12px;
 		padding : 20px 15px;
 		margin: 3px;
+		width: 320px;
 	}
 	#title{
 		font-size : 25px;	
