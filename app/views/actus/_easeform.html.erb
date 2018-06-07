@@ -1,46 +1,46 @@
 <%= form_for @actu  do |f| %>
 
-<div class="row">
-<div class="col-75">  
-  <%= f.label :title %>
-	<br>
-<%= f.text_field :title %>
-</div></div>
-<div class="row">
-<div class="col-75">  
- <%= f.label :pwd %>
-	<br>
-<%= f.password_field :pwd %>
-</div></div>
-<!-- <div class="row">
-<div class="col-75">  
- <%= f.label picture %>
-  <br>
- <%= f.file_field picture %>
-</div>
-</div> -->
-<div class="row">
-<div class="col-75">  
-<%= f.label :content %>
-<br>
-  <%= f.text_area :content , :cols => 40, :rows => 5 %>
- <!--  <textarea cols="40" rows="40" name="content" id="content">
-  </textarea> -->
-</div></div>
+  <div class="row">
+  <div class="col-75">  
+    <%= f.label :title %>
+  	<br>
+  <%= f.text_field :title %>
+  </div>
+  </div>
 
-<div class="row">
+
+  <div class="row">
+  <div class="col-75">  
+   <%= f.label :pwd %>
+  	<br>
+  <%= f.password_field :pwd %>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-75">  
+      <%= f.label :content %>
+    <br>
+      <%= f.text_area :content , :cols => 40, :rows => 5 %>
+   <!--  <textarea cols="40" rows="40" name="content" id="content">
+    </textarea> -->
+  </div>
+  </div>
+
+  <div class="row">
   <%= f.submit "Sauvegarder" %>
-</div>
-  <br><br>
-<div class="way">
-	<div class="classicB" id="myBtn">  
-			Supprimer
-	</div>
-	<div class="classicB">
-	  <%= link_to "Retour", actu_path, class: 'dark'%>
-	</div>
+  </div>
 
-</div>
+  <br><br>
+  <div class="way">
+  <div class="classicB" id="myBtn">  
+  		Supprimer
+  </div>
+  <div class="classicB">
+    <%= link_to "Retour", actu_path, class:'dark'%>
+  </div>
+
+  </div>
 <% end %>
 
 <div id="myModal" class="modal">
