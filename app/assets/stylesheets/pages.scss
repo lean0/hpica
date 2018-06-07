@@ -96,7 +96,8 @@ iframe{
 	background: #7DBAF0;
 	margin :0 auto;
 	color: white;
-	height: 400px;
+	height: 50vh;
+	font-size: 2.8vh;
 	position:sticky; 
 	top:105.2px;
 	text-align: center;
@@ -306,7 +307,7 @@ margin-bottom:15px;
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: 22vh 15vw;
+    margin: 20vh 15vw;
     padding: 3vh 2vw;
     border: 1px solid #888;
     width: 70vw;
