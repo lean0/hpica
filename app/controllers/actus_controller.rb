@@ -23,6 +23,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
       if actu_params[:pwd]== "NEN9PxeYR4uWzvA6B5mC"
         redirect_to edit_actu_path
       else
+        flash[:alert] = "Mauvais Mot de passe"
         render :show
       end
   end
@@ -40,7 +41,8 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
          render :new
       end
        else
-         render :new
+          flash[:alert] = "Mauvais Mot de passe"
+          render :new
     end
   end
 
@@ -50,11 +52,13 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   def update
     if actu_params[:pwd]== "NEN9PxeYR4uWzvA6B5mC"
       if @actu.update(actu_params)
+      flash[:notice] = "Félicitations ! "
       render :show
       else
          render :edit
       end
     else
+      flash[:alert] = "Mauvais Mot de passe"
       render :edit
     end
   end   
@@ -68,7 +72,8 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
     @actu.destroy
 
     redirect_to actus_path  
-  else
+  else      
+    flash[:alert] = "Mauvais Mot de passe"
     render :edit
   end
   end
@@ -78,7 +83,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
 
   def actu_params
     # *Strong params* : whitelisting of what can be updated by the actu
-    params.require(:actu).permit(:title, :content, :pwd)
+    params.require(:actu).permit(:title, :content, :pwd, :image)
   end
   def set_actu
     @actu = Actu.find(params[:id])

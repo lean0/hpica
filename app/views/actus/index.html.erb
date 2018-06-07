@@ -26,17 +26,12 @@
     <div id="expo">
             
         <div style="height: 35vh; overflow:hidden;padding: 4px;color: black; text-decoration: none; width: 55vw; ">
-  <!--      <%= actu.id%>. 
+  <!--      <%= actu.id%>.
+ 
   -->     <div class="haut">
-            <%= actu.title.upcase%>    
+            <%= link_to actu.title.upcase , actu_path(actu)%>    
           </div>
-            <%= actu.content%>
-        </div>
-        
-        <div class="way"> 
-          <div class="classicB"> 
-            <%= link_to "Détails", actu_path(actu)%>
-          </div>
+            <%= actu.content%><%= actu.image%>
         </div>
       </div>
     <% end%>
