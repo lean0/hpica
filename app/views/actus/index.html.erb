@@ -31,7 +31,7 @@
   -->     <div class="haut">
             <%= link_to actu.title.upcase , actu_path(actu)%>    
           </div>
-            <%= actu.content%><%= actu.content%>
+            <%=link_to actu.content, actu_path(actu)%>
         </div>
       </div>
     <% end%>

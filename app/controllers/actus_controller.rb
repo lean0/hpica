@@ -83,7 +83,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
 
   def actu_params
     # *Strong params* : whitelisting of what can be updated by the actu
-    params.require(:actu).permit(:title, :content, :pwd, :image)
+    params.require(:actu).permit(:title, :content, :pwd)
   end
   def set_actu
     @actu = Actu.find(params[:id])
