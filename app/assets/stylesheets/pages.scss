@@ -67,6 +67,7 @@ a{
 
 .box {
 	padding-top: 70px;
+	padding-bottom: 40px;
 	display:flex;
 	flex-wrap:wrap;
 	flex-direction :row;
@@ -295,7 +296,7 @@ margin-bottom:15px;
     padding-top: 10vh; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
@@ -310,9 +311,12 @@ margin-bottom:15px;
     padding: 4vh;
     border: 1px solid #888;
     width: 90vw;
-    height: 70vh;
+    height: 60vh;
     text-align:center;    
     font-size: 3.3vh;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 /* The Close Button */
@@ -380,7 +384,7 @@ margin-bottom:15px;
 		margin: auto;
 	}
 	.formBox{
-	width: 90vw;
+	width: 75vw;
 	margin: auto;
 
 	}
@@ -393,6 +397,10 @@ margin-bottom:15px;
 }
 @media all and (max-width: 340px)
 {
+	.formBox{
+	width: 92vw;
+	margin: auto;
+	}
 	#rdv
 	{
 		font-size: 2.4vh;

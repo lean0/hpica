@@ -8,14 +8,16 @@ http://guides.rubyonrails.org/form_helpers.html
 
 <%= form_for @actu  do |f| %>
 
-
-<%= render 'errors'%>
+<div>
+	<%= render 'errors'%>
+</div>
 <div class="row">
-<div class="col-75">  
-<%= f.label :title %>
-	<br>
-<%= f.text_field :title %>
-</div></div>
+	<div class="col-75">  
+		<%= f.label :title %>
+			<br>
+		<%= f.text_field :title %>
+	</div>
+</div>
 
 
 <div class="row">
