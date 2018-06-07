@@ -49,20 +49,36 @@ bottom: 0;
 
 .displayBox
 {
-	text-align:center;
-	display:flex;
-	flex-direction: column;
-	justify-content : space-between;
-	border-radius: 5px;
-	box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
-	background-color: white;
-	opacity: 0.93; 
-	overflow:hidden;overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  justify-content : space-between;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  opacity: 0.93; 
+  overflow:hidden;overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;
   width:55vw;
   height:50vh;
-	margin:auto;
+  margin:auto;
   padding: 2.75vh 2vw;
-	
+  
+}
+.showBox
+{
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  justify-content : space-between;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  opacity: 0.93; 
+  overflow:hidden;overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;
+  width:55vw;
+  margin:auto;
+  padding: 2.75vh 2vw;
+  
 }
 .formBox
 {
