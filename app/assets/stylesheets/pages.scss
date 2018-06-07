@@ -306,12 +306,11 @@ margin-bottom:15px;
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin-left:5vw;
-    margin-right:5vw;
+    margin: 30vh 15vw
     padding: 4vh;
     border: 1px solid #888;
-    width: 90vw;
-    height: 60vh;
+    width: 70vw;
+    height: 40vh;
     text-align:center;    
     font-size: 3.3vh;
 
@@ -395,6 +394,12 @@ margin-bottom:15px;
 }
 @media all and (max-width: 340px)
 {
+.modal-content {
+    margin:20vh 10vw;
+    width: 80vw;
+    height: 60vh;
+
+}
 	.formBox{
 	width: 92vw;
 	margin: auto;
