@@ -19,15 +19,6 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   def log
   end
 
-  def check
-      if actu_params[:pwd]== "NEN9PxeYR4uWzvA6B5mC"
-        redirect_to edit_actu_path
-      else
-        flash[:alert] = "Mauvais Mot de passe"
-        render :show
-      end
-  end
-
   def new
     @actu = Actu.new
   end
@@ -41,7 +32,6 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
          render :new
       end
        else
-          flash[:alert] = "Mauvais Mot de passe"
           render :new
     end
   end
@@ -52,13 +42,11 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   def update
     if actu_params[:pwd]== "NEN9PxeYR4uWzvA6B5mC"
       if @actu.update(actu_params)
-      flash[:notice] = "Félicitations ! "
       render :show
       else
          render :edit
       end
     else
-      flash[:alert] = "Mauvais Mot de passe"
       render :edit
     end
   end   
@@ -73,7 +61,6 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
 
     redirect_to actus_path  
   else      
-    flash[:alert] = "Mauvais Mot de passe"
     render :edit
   end
   end
