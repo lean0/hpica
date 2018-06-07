@@ -58,13 +58,17 @@ bottom: 0;
   box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
   background-color: white;
   opacity: 0.93; 
-  overflow:scroll;overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;
+  overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;
   width:60vw;
   height:80vh;
   margin:auto;
-  transform:translate3d(0, 0, 0);
   margin-top: 0px;
   padding: 4vh 2vw;
+  
+} 
+#details{
+  transform:translate3d(0, 0, 0);overflow:scroll;
+  overflow-wrap: break-word; word-wrap: break-word; hyphens: auto;
   
 }
 .indexBox
