@@ -292,7 +292,7 @@ margin-bottom:15px;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 10vh; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -304,16 +304,15 @@ margin-bottom:15px;
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin-top: 10vh;
+    background-color: #fefefe;s
     margin-left: 10vh;
     margin-right:10vh;
     padding: 50px;
     border: 1px solid #888;
-    width: 80vw;
-    height: 60vh;
+    width: 90vw;
+    height: 70vh;
     text-align:center;    
-    font-size: 3vh;
+    font-size: 3.3vh;
 }
 
 /* The Close Button */

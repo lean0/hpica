@@ -1,22 +1,21 @@
 <!-- <h1>Actus#show</h1>
 <p>Find me in app/views/actus/show.html.erb</p> -->
-<div style="background: orange;"> 
-	<div style="font-size: 18px; font-weight: bold; padding-top:  75px;padding-bottom: 15px;  text-align: center; width: 80%; margin: auto;color: black; text-decoration: none;"> 
-	    <%= link_to "Hélène Actus", actus_path,class: 'dark'%>  <%= link_to new_actu_path do%>
-		    <span style="float: right;"> <i class="fas fa-plus"></i></span>
-	    <%end%>
-	      
-	</div >
+<div style="background: orange;font-size: 18px; font-weight: bold; padding-top:  75px;padding-bottom: 15px;  text-align: center; width: 80%; margin: auto;color: black; text-decoration: none;"> 
+	    
+	<%= link_to "Hélène Actus", actus_path, class: 'dark'%>  
+	<%= link_to new_actu_path do%>
+		<span style="float: right;"> 
+			<i class="fas fa-plus"></i>
+		</span>
+	<%end%>
+</div >
 		
-	<div class="box" id="show">
-	  <div class="displayBox">
-	  	<div class="haut">
-	        lets hope
-	    </div>
-			
-		<div>
-			test
+<div class="box" id="show">
+  	<div class="displayBox">
+  		<div class="haut">
+	   		<%= actu.title.upcase %>
 		</div>
+		<%= actu.content %>
 		<br>
 
 		<div class="way">
@@ -28,16 +27,5 @@
 			</div>
 		</div>    
 	</div>
-	 <%= render "pages/map"%>
-
-	</div>
+	<%= render "pages/map"%>
 </div>
-
- <!-- 
-
-<div id="myModal" class="modal">
-
-	<div class="modal-content">	
-		<%= ender pwdform %>
-	</div>
-</div> -->
