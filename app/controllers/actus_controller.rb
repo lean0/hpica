@@ -25,9 +25,9 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
 
   def create
     @actu = Actu.new(actu_params)
-    if actu_params[:pwd]== "NEN9PxeYR4uWzvA6B5mC"
+    if actu_params[:pwd]== mp
       if @actu.save 
-        redirect_to actu_path(@actu)
+        redirect_to actu_path(@actu), notice:'Actu ajouter.'
       else
          render :new
       end
@@ -40,14 +40,15 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   end
 
   def update
-    if actu_params[:pwd]== "NEN9PxeYR4uWzvA6B5mC"
+    if actu_params[:pwd]== mp
       if @actu.update(actu_params)
-      render :show
+      render :show, notice:'Actu was successfully updated.'
       else
          render :edit
       end
     else
-      render :edit
+
+      render :edit, , notice:'Wrong pwd.'
     end
   end   
       # redirect_to actus_path
@@ -56,28 +57,32 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   def dele   
   end
   def destroy 
-  if actu_params[:pwd]== "NEN9PxeYR4uWzvA6B5mC"  
+  if actu_params[:pwd]== mp  
     @actu.destroy
-
-    redirect_to actus_path  
+    redirect_to actus_path, notice:'Actu was successfully deleted.'
   else 
-    render :edit
+    render :edit, notice:'Wrong pwd.'
   end
   end
+
+
+  def serve
+    send_data(@actu.data, :type => @actu.mime_type, :filename => "#{@actu.name}.jpg", :disposition => "inline")
+end
 
 
   private 
 
   def actu_params
     # *Strong params* : whitelisting of what can be updated by the actu
-    params.require(:actu).permit(:title, :content, :pwd)
+    params.require(:actu).permit(:title, :content,:image,:pwd)
   end
   def set_actu
     @actu = Actu.find(params[:id])
   end
 
   def pass
-    mp = "NEN9PxeYR4uWzvA6B5mC"
+    mp = "20pactu18"
   end
 
 end
