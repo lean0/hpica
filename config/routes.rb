@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 	resources :actus
- #  get "serve", :on => :member
-
- # :member => {:serve => :get}
 
 get 'home', to: "pages#home", as: :home
 
