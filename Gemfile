@@ -16,7 +16,6 @@ gem 'sass-rails', '~> 5.0'
 # #Pictures
 # gem 'imagemagick-identify', '~> 0.0.1'
 # gem 'paperclip', '~> 4.2.1'
-gem "paperclip", "~> 4.2.1"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes

@@ -66,16 +66,16 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   end
 
 
-  def serve
-    send_data(@actu.data, :type => @actu.mime_type, :filename => "#{@actu.name}.jpg", :disposition => "inline")
-end
+#   def serve
+#     send_data(@actu.data, :type => @actu.mime_type, :filename => "#{@actu.name}.jpg", :disposition => "inline")
+# end
 
 
   private 
 
   def actu_params
     # *Strong params* : whitelisting of what can be updated by the actu
-    params.require(:actu).permit(:title, :content,:image,:pwd)
+    params.require(:actu).permit(:title, :content,:pwd)
   end
   def set_actu
     @actu = Actu.find(params[:id])
