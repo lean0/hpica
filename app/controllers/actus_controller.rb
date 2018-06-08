@@ -48,7 +48,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
       end
     else
 
-      render :edit, , notice:'Wrong pwd.'
+      render :edit, notice:'Wrong pwd.'
     end
   end   
       # redirect_to actus_path
