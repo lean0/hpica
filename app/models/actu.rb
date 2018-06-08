@@ -3,8 +3,8 @@ class Actu < ApplicationRecord
   	validates :title,presence:{message:"est vide"},uniqueness:{message:"existe déja !"}
   	validates :content,presence:{message:"est vide"},uniqueness:{message:"existe déja !"}
   	validates :pwd,presence:{message:"est vide"}
-   	# has_attached_file :images
 end
+   	# has_attached_file :images
 
 #migration
 # add_attachment :actus, :image
