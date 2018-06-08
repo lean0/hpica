@@ -1,5 +1,7 @@
 <%= form_for @actu  do |f| %>
-
+<div>
+  <%= render 'error'%>
+</div>
   <div class="row">
   <div class="col-75">  
     <%= f.label :title %>
@@ -51,7 +53,9 @@
 	">
     <span class="close">&times;</span><br><br>
 <%= form_for(@actu, :html => { :method => :delete, :remote => true }) do |f| %>
-
+<div>
+  <%= render 'error'%>
+</div>
 <div class="row">
 <div class="col-75">  
   <%= f.label :pwd %>

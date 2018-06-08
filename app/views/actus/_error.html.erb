@@ -1,0 +1,18 @@
+<% if @actu.errors.any? %>
+  <div class="panel panel-warning errors">
+    <div class="panel-heading">
+      <h4>
+        <i class="glyphicon glyphicon-exclamation-sign"></i> 
+        Erreur trouver lors de la sauvegarde
+      </h4>
+    </div>
+    
+    <ul class="panel-body">
+      <% @actu.errors.full_messages.each do |actu| %>
+        <li>  
+          <%=  actu %>      
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
