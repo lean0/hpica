@@ -25,7 +25,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
 
   def create
     @actu = Actu.new(actu_params)
-    if actu_params[:pwd]== mp
+    if actu_params[:pwd]== "20pactu18"
       if @actu.save 
         redirect_to actu_path(@actu), notice:'Actu ajouter.'
       else
@@ -40,7 +40,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   end
 
   def update
-    if actu_params[:pwd]== mp
+    if actu_params[:pwd]== "20pactu18"
       if @actu.update(actu_params)
       render :show, notice:'Actu was successfully updated.'
       else
@@ -57,7 +57,7 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
   def dele   
   end
   def destroy 
-  if actu_params[:pwd]== mp  
+  if actu_params[:pwd]== "20pactu18"  
     @actu.destroy
     redirect_to actus_path, notice:'Actu was successfully deleted.'
   else 
