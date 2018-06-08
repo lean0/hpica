@@ -32,7 +32,6 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
          render :new
       end
        else
-        @actu.errors.pwd = "mauvais pwd"
           render :new
     end
   end
@@ -48,7 +47,6 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
          render :edit
       end
     else
-      @actu.errors.pwd = "mauvais pwd"
       render :edit
     end
   end   
@@ -63,7 +61,6 @@ before_action :set_actu, only: [:show, :edit, :update, :destroy]
 
     redirect_to actus_path  
   else 
-  @actu.errors.pwd = "mauvais pwd"     
     render :edit
   end
   end
